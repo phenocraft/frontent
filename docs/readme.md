@@ -12,8 +12,8 @@ Tracking \ Capturing of plant information and location in a green house farm. A 
 ## Tasks
 |Nr. |Description               | Status     |
 |----|:------------------------:|-----------:|      
-|1   |Process farm worker       | in progress|
-|2   |Screens design farm worker| in progress|
+|1   |Process farm worker       | done       |
+|2   |Screens design farm worker| done       |
 |3   |AWS setup                 |            |
 |4   |Login  & Authentication   |            |
 |5   |Cloning                   |            |
