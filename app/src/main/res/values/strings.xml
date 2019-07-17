@@ -12,4 +12,8 @@
     <string name="main_button_1l_potting">1L Potting</string>
     <string name="main_button_locate">Locate</string>
     <string name="main_label_phenocraft">PhenoCraft</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appwidget_text">EXAMPLE</string>
 </resources>

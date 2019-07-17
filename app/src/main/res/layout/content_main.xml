@@ -5,9 +5,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:showIn="@layout/activity_main"
-        tools:context=".MainActivity" tools:layout_editor_absoluteY="56dp">
+        tools:context=".ui.main.MainActivity" tools:layout_editor_absoluteY="56dp">
 
     <Button
             android:text="@string/main_button_cloning"
@@ -15,14 +14,14 @@
             android:layout_height="59dp"
             android:id="@+id/main_button_cloning"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginTop="36dp"
+            android:layout_marginStart="20dp" android:layout_marginTop="36dp"
             app:layout_constraintTop_toBottomOf="@+id/main_button_potting"/>
     <Button
             android:text="@string/main_button_planting"
             android:layout_width="365dp"
             android:layout_height="59dp"
             android:id="@+id/main_button_planting" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginTop="36dp"
+            android:layout_marginStart="20dp" android:layout_marginTop="36dp"
             app:layout_constraintTop_toBottomOf="@+id/main_button_cloning"/>
     <Button
             android:text="@string/main_button_harvest"
@@ -30,7 +29,7 @@
             android:layout_height="59dp"
             android:id="@+id/main_button_harvest"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginTop="36dp"
+            android:layout_marginStart="20dp" android:layout_marginTop="36dp"
             app:layout_constraintTop_toBottomOf="@+id/main_button_locate"/>
     <Button
             android:text="@string/main_button_flowering"
@@ -38,7 +37,7 @@
             android:layout_height="59dp"
             android:id="@+id/main_button_flowering"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginTop="36dp"
+            android:layout_marginStart="20dp" android:layout_marginTop="36dp"
             app:layout_constraintTop_toBottomOf="@+id/main_button_harvest"/>
     <Button
             android:text="@string/main_button_1l_potting"
@@ -46,7 +45,7 @@
             android:layout_height="59dp"
             android:id="@+id/main_button_potting"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginTop="36dp"
+            android:layout_marginStart="20dp" android:layout_marginTop="36dp"
             app:layout_constraintTop_toBottomOf="@+id/main_button_flowering"/>
     <Button
             android:text="@string/main_button_locate"
@@ -54,17 +53,17 @@
             android:layout_height="59dp"
             android:id="@+id/main_button_locate"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="20dp" android:layout_marginStart="20dp" android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/main_heading"/>
-    <EditText
+    <TextView
             android:layout_width="291dp"
             android:layout_height="46dp"
-            android:inputType="textPersonName"
             android:text="@string/main_label_phenocraft"
             android:ems="10"
             android:id="@+id/main_heading"
-            android:textSize="24sp" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="60dp"
+            android:textSize="24sp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="60dp" android:textStyle="bold" android:gravity="center"
-            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent" android:autofillHints=""/>
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"
+            />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

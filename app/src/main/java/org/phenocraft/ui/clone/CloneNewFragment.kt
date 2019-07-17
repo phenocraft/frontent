@@ -1,4 +1,4 @@
-package org.phenocraft.activities.clone
+package org.phenocraft.ui.clone
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle

@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:showIn="@layout/activity_main"
-        tools:context=".MainActivity" tools:layout_editor_absoluteY="56dp">
+        tools:context=".ui.main.MainActivity" tools:layout_editor_absoluteY="56dp">
 
     <Button
             android:text="@string/main_button_cloning"

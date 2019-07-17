@@ -1,4 +1,4 @@
-package org.phenocraft.activities.search
+package org.phenocraft.ui.search
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle

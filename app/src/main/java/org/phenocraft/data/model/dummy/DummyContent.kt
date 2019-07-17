@@ -1,4 +1,4 @@
-package org.phenocraft.dummy
+package org.phenocraft.data.model.dummy
 
 import java.util.ArrayList
 import java.util.HashMap

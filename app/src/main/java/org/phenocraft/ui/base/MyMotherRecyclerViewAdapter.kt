@@ -1,4 +1,4 @@
-package org.phenocraft
+package org.phenocraft.ui.base
 
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 
 
-import org.phenocraft.MotherFragment.OnListFragmentInteractionListener
-import org.phenocraft.dummy.DummyContent.DummyItem
+import org.phenocraft.ui.base.MotherFragment.OnListFragmentInteractionListener
+import org.phenocraft.data.model.dummy.DummyContent.DummyItem
 
 import kotlinx.android.synthetic.main.fragment_mother.view.*
+import org.phenocraft.R
 
 /**
  * [RecyclerView.Adapter] that can display a [DummyItem] and makes a call to the

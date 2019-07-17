@@ -1,4 +1,4 @@
-package org.phenocraft
+package org.phenocraft.ui.clone
 
 import android.content.Context
 import android.os.Bundle
@@ -9,19 +9,20 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import org.phenocraft.R
 
-import org.phenocraft.dummy.DummyContent
-import org.phenocraft.dummy.DummyContent.DummyItem
+import org.phenocraft.data.model.dummy.DummyContent
+import org.phenocraft.data.model.dummy.DummyContent.DummyItem
 
 /**
  * A fragment representing a list of Items.
  * Activities containing this fragment MUST implement the
- * [MotherFragment.OnListFragmentInteractionListener] interface.
+ * [CloningFragment.OnListFragmentInteractionListener] interface.
  */
-class MotherFragment : Fragment() {
+class CloningFragment : Fragment() {
 
     // TODO: Customize parameters
-    private var columnCount = 3
+    private var columnCount = 1
 
     private var listener: OnListFragmentInteractionListener? = null
 
@@ -37,7 +38,7 @@ class MotherFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_mother_list, container, false)
+        val view = inflater.inflate(R.layout.fragment_cloning_list, container, false)
 
         // Set the adapter
         if (view is RecyclerView) {
@@ -46,7 +47,7 @@ class MotherFragment : Fragment() {
                     columnCount <= 1 -> LinearLayoutManager(context)
                     else -> GridLayoutManager(context, columnCount)
                 }
-                adapter = MyMotherRecyclerViewAdapter(DummyContent.ITEMS, listener)
+                adapter = CloningRecyclerViewAdapter(DummyContent.ITEMS, listener)
             }
         }
         return view
@@ -90,7 +91,7 @@ class MotherFragment : Fragment() {
         // TODO: Customize parameter initialization
         @JvmStatic
         fun newInstance(columnCount: Int) =
-            MotherFragment().apply {
+            CloningFragment().apply {
                 arguments = Bundle().apply {
                     putInt(ARG_COLUMN_COUNT, columnCount)
                 }

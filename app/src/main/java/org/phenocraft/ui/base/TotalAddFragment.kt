@@ -1,4 +1,4 @@
-package org.phenocraft.activities.total
+package org.phenocraft.ui.base
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
